@@ -1,39 +1,52 @@
-<!DOCTYPE html>
-<html>
+<html ng-app="address">
 <head>
-<meta charset="ISO-8859-1">
-<title>City Info</title>
-<link rel="stylesheet" type="text/css" href="CSS/style.css"/>
-
-<script type="text/javascript" src="JavaScripts/jquery.js"></script>
-<script type="text/javascript" src="JavaScripts/city_info.js"></script>
+    <title>hello</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css"/>
+    <script src="/node_modules/angular/angular.js"></script>
+    <script src="controller.js"></script>
 </head>
-
 <body>
-	<div class="header">
-		<div class="container">
-			<div class="logo">
-				<h1><a>City Information</a></h1>
-			</div>	
-			<div class="button">
-				<button id="btn_mpf">Get Info</button>
-			</div>
-		</div>
-	</div>
-	
-	<div class="tiles" style="display:none;">
-		<!--  Static Structure(commented)
-		<div class="tile" id="tile">
-			<div class="city_name"></div>
-			<div class="Location"></div>
-			<div class="Population"></div>
-			<div class="State">
-		</div>
-		-->
-	<div class="clearfix"></div>
-	</div>
-	
+<div class="container" ng-controller="addressCtrl as vm">
+    <header>
+        <h1>Address Book</h1>
+    </header>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+        <tfoot>
 
+        <tr>
+            <td>
+                <input type="text" class="form-control" ng-model="vm.address.FirstName"/>
+            </td>
+            <td>
+                <input type="text" class="form-control" ng-model="vm.address.LastName"/>
+            </td>
+            <td>
+                <input type="text" class="form-control" ng-model="vm.address.Phone"/>
+            </td>
+            <td>
+                <input type="text" class="form-control" ng-model="vm.address.Email"/>
+            </td>
 
+        </tr>
+            <tr ng-repeat="address in vm.AddressBookInfo | limitTo:20">
+                <td>{{address.FirstName}}</td>
+                <td>{{address.LastName}}</td>
+                <td>{{address.Phone}}</td>
+                <td>{{address.Email}}</td>
+
+            </tr>
+        </tfoot>
+    </table>
+</div>
 </body>
 </html>
