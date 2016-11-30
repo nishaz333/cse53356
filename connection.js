@@ -1,13 +1,13 @@
-var env=process.env.NODE_ENV||'dev';
+var env=process.env.NODE_ENV||3000;
 var con='';
-if(env=='dev')
+if(env==3000)
 {
     con='mongodb://localhost:27017/address';
 }
 else {
 
 
-    con = 'mongodb://aashrita:110540asr@ds043694.mlab.com:43694/proj2'
+    con = 'mongodb://aashrita:aashrita@ds115738.mlab.com:15738/heroku_clk1szqv'
 
 }
 console.log(con);
