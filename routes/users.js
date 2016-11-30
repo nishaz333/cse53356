@@ -55,7 +55,7 @@ var fs = require('fs');
 var uristring =
     process.env.MONGOLAB_URI ||
     process.env.MONGOHQ_URL ||
-    'mongodb://aashrita:aashrita@ds115738.mlab.com:15738/heroku_clk1szqv';
+    'mongodb://gayatri:gayatri@ds021771.mlab.com:21771/heroku_fkkrl8s8';
 
 mongoose.connect(uristring, function (err, res) {
     if (err) {
