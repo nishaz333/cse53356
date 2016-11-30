@@ -1,11 +1,11 @@
 (function(){
     "use strict";
     angular.module('address',[])
-           .controller('addressCtrl',addressBook);
+        .controller('addressCtrl',addressBook);
 
     addressBook.$inject=['$http'];
 
-function addressBook($http)
+    function addressBook($http)
     {
         var vm=this;
         //vm.Title="Address Book";
@@ -22,7 +22,7 @@ function addressBook($http)
         {
             $http.post('/getAddress',vm.address).then(
                 function(res){
-                  console.log(res);
+                    console.log(res);
                 },
                 function(err)
                 {
