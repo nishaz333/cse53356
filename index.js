@@ -44,8 +44,8 @@ handleDisconnect();
 
 
 
-var info = [{ "city" : "CHICOPEE", "state" : "MA", "_id" : "01013" }
-,{ "city" : "CHICOPEE",  "state" : "MA", "_id" : "01020" }
+var info = [{ "city" : "CHICOPEE", "loc" : [ -72.607962, 42.162046 ], "pop" : 23396, "state" : "MA", "_id" : "01013" }
+,{ "city" : "CHICOPEE", "loc" : [ -72.576142, 42.176443 ], "pop" : 31495, "state" : "MA", "_id" : "01020" }
 ,{ "city" : "WESTOVER AFB", "loc" : [ -72.558657, 42.196672 ], "pop" : 1764, "state" : "MA", "_id" : "01022" }
 ,{ "city" : "CUMMINGTON", "loc" : [ -72.905767, 42.435296 ], "pop" : 1484, "state" : "MA", "_id" : "01026" }
 ,{ "city" : "MOUNT TOM", "loc" : [ -72.67992099999999, 42.264319 ], "pop" : 16864, "state" : "MA", "_id" : "01027" }
