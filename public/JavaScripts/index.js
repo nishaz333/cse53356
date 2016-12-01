@@ -7,10 +7,10 @@ var mysql = require('mysql');
 
 
 var db_config = {
-    host: 'us-cdbr-iron-east-03.cleardb.net',
-    user: 'b90a985c1139f8',
-    password: '94ed6759',
-    database: 'heroku_c3554a0c50f6916'
+    host: '********',
+    user: '********',
+    password: '************',
+    database: '***********'
 };
 
 var connection;
