@@ -1,0 +1,49 @@
+@-webkit-keyframes flash {
+  from {color: red;}
+  to {color: black;}
+}
+
+.flash{
+    -webkit-animation-name: flash;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:ease-in-out;
+    -webkit-animation-direction: alternate;
+}
+/*
+.bounce {
+    animation: bounce 1s infinite;
+    -webkit-animation: bounce 1s infinite;
+    -moz-animation: bounce 1s infinite;
+    -o-animation: bounce 1s infinite;
+}
+ 
+@-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
+    40% {-webkit-transform: translateY(-30px);}
+    60% {-webkit-transform: translateY(-15px);}
+}
+ 
+@-moz-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+    40% {-moz-transform: translateY(-30px);}
+    60% {-moz-transform: translateY(-15px);}
+}*/
+
+.mymove {
+    animation: bounceIn 0.75s;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.25);
+    opacity: 0;
+  }
+/*  60% {
+    transform: scale(0.65);
+    opacity: 1;
+  }*/
+  100% {
+    transform: scale(1);
+  }
+}
